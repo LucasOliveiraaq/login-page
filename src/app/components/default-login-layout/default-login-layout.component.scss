@@ -24,9 +24,14 @@ main {
     flex-grow: 0.3;
     padding: 0 35px;
 
+    img{
+      margin-bottom: 30px;
+    }
+
     h2 {
       font-size: 20px;
       font-weight: bold;
+      margin-bottom: 45px;
     }
 
     .btn-wrapper {
@@ -37,6 +42,24 @@ main {
       width: 100%;
       gap: 30px;
 
+      .divider{
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        color: $gray-bg;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        div{
+          flex-grow: 1;
+          height: 2px;
+          background-color: $gray-bg;
+        }
+      }
+
       button {
         width: 100%;
         border-radius: 8px;
@@ -45,6 +68,7 @@ main {
         border: none;
         background-color: transparent;
         padding: 12px 24px;
+        cursor: pointer;
 
         &.btn-primary {
          background-color: $primary-color;
